@@ -32,6 +32,8 @@
             this.textBox_Password = new System.Windows.Forms.TextBox();
             this.button_Auth = new System.Windows.Forms.Button();
             this.brigadirForm = new System.Windows.Forms.Button();
+            this.button_Main = new System.Windows.Forms.Button();
+            this.button_Master = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox_Login
@@ -60,6 +62,7 @@
             this.button_Auth.TabIndex = 2;
             this.button_Auth.Text = "Войти";
             this.button_Auth.UseVisualStyleBackColor = true;
+            this.button_Auth.Click += new System.EventHandler(this.button_Auth_Click);
             // 
             // brigadirForm
             // 
@@ -71,11 +74,33 @@
             this.brigadirForm.UseVisualStyleBackColor = true;
             this.brigadirForm.Click += new System.EventHandler(this.brigadirForm_Click);
             // 
+            // button_Main
+            // 
+            this.button_Main.Location = new System.Drawing.Point(12, 100);
+            this.button_Main.Name = "button_Main";
+            this.button_Main.Size = new System.Drawing.Size(75, 23);
+            this.button_Main.TabIndex = 4;
+            this.button_Main.Text = "Начальник";
+            this.button_Main.UseVisualStyleBackColor = true;
+            this.button_Main.Click += new System.EventHandler(this.button_Main_Click);
+            // 
+            // button_Master
+            // 
+            this.button_Master.Location = new System.Drawing.Point(12, 52);
+            this.button_Master.Name = "button_Master";
+            this.button_Master.Size = new System.Drawing.Size(75, 23);
+            this.button_Master.TabIndex = 5;
+            this.button_Master.Text = "Мастер";
+            this.button_Master.UseVisualStyleBackColor = true;
+            this.button_Master.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Auth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(380, 399);
+            this.Controls.Add(this.button_Master);
+            this.Controls.Add(this.button_Main);
             this.Controls.Add(this.brigadirForm);
             this.Controls.Add(this.button_Auth);
             this.Controls.Add(this.textBox_Password);
@@ -93,5 +118,7 @@
         private TextBox textBox_Password;
         private Button button_Auth;
         private Button brigadirForm;
+        private Button button_Main;
+        private Button button_Master;
     }
 }
