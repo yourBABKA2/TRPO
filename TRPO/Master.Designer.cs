@@ -59,7 +59,7 @@
             this.Controls.Add(this.showRoutes);
             this.Name = "Master";
             this.Text = "Master";
-            this.Load += new System.EventHandler(this.Master_Load);
+            //this.Load += new System.EventHandler(this.Master_Load);
             this.ResumeLayout(false);
 
         }
