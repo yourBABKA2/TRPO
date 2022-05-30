@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TRPO
 {
-    public partial class driversView : Form
+    public partial class mechanicsView : Form
     {
-        public driversView()
+        public mechanicsView()
         {
             InitializeComponent();
         }

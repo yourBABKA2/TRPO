@@ -1,6 +1,6 @@
 ﻿namespace TRPO
 {
-    partial class driversView
+    partial class mechanicsView
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.buttonBack = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -35,10 +36,18 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.driversChange = new System.Windows.Forms.Button();
-            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // buttonBack
+            // 
+            this.buttonBack.Location = new System.Drawing.Point(435, 245);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(224, 54);
+            this.buttonBack.TabIndex = 5;
+            this.buttonBack.Text = "Назал";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // dataGridView1
             // 
@@ -54,7 +63,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(647, 227);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.TabIndex = 3;
             // 
             // ID
             // 
@@ -83,38 +92,18 @@
             // 
             // Column5
             // 
-            this.Column5.HeaderText = "Закрепленное авто";
+            this.Column5.HeaderText = "Число выполненных работ";
             this.Column5.Name = "Column5";
             // 
-            // driversChange
-            // 
-            this.driversChange.Location = new System.Drawing.Point(12, 245);
-            this.driversChange.Name = "driversChange";
-            this.driversChange.Size = new System.Drawing.Size(224, 54);
-            this.driversChange.TabIndex = 1;
-            this.driversChange.Text = "Переназначить водитилей";
-            this.driversChange.UseVisualStyleBackColor = true;
-            // 
-            // buttonBack
-            // 
-            this.buttonBack.Location = new System.Drawing.Point(435, 245);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(224, 54);
-            this.buttonBack.TabIndex = 2;
-            this.buttonBack.Text = "Назал";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
-            // driversView
+            // mechanicsView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(671, 311);
+            this.ClientSize = new System.Drawing.Size(663, 308);
             this.Controls.Add(this.buttonBack);
-            this.Controls.Add(this.driversChange);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "driversView";
-            this.Text = "driversView";
+            this.Name = "mechanicsView";
+            this.Text = "mechanicsView";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -122,6 +111,7 @@
 
         #endregion
 
+        private Button buttonBack;
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn ID;
         private DataGridViewTextBoxColumn Column1;
@@ -129,7 +119,5 @@
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column4;
         private DataGridViewTextBoxColumn Column5;
-        private Button driversChange;
-        private Button buttonBack;
     }
 }

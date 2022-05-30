@@ -22,7 +22,13 @@ namespace TRPO
             this.Hide();
             driversView newForm  = new driversView();
             newForm.Show();
+        }
 
+        private void mechanicsPersonel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            mechanicsView mechanicsView = new mechanicsView();
+            mechanicsView.Show();
         }
     }
 }

@@ -51,6 +51,7 @@
             this.mechanicsPersonel.TabIndex = 2;
             this.mechanicsPersonel.Text = "Просмотреть персонал (Обс. персонал)";
             this.mechanicsPersonel.UseVisualStyleBackColor = true;
+            this.mechanicsPersonel.Click += new System.EventHandler(this.mechanicsPersonel_Click);
             // 
             // button1
             // 
