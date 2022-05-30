@@ -30,5 +30,12 @@ namespace TRPO
             mechanicsView mechanicsView = new mechanicsView();
             mechanicsView.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Auth auth = new Auth();
+            auth.Show();
+        }
     }
 }

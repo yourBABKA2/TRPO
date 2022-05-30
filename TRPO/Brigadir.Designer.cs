@@ -31,6 +31,7 @@
             this.driversPersonel = new System.Windows.Forms.Button();
             this.mechanicsPersonel = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // driversPersonel
@@ -62,11 +63,22 @@
             this.button1.Text = "Просмотреть свой цех";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(45, 198);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 29);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Выход";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Brigadir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(190, 202);
+            this.ClientSize = new System.Drawing.Size(190, 249);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.mechanicsPersonel);
             this.Controls.Add(this.driversPersonel);
@@ -80,5 +92,6 @@
         private Button driversPersonel;
         private Button mechanicsPersonel;
         private Button button1;
+        private Button button2;
     }
 }
