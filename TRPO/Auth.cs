@@ -21,6 +21,11 @@ namespace TRPO
         internal static Master master = new Master();
         internal static Main main = new Main();
 
+        private void button_Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         public Auth()
         {
             InitializeComponent();

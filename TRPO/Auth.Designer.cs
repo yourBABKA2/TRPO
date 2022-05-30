@@ -34,6 +34,7 @@
             this.brigadirForm = new System.Windows.Forms.Button();
             this.button_Main = new System.Windows.Forms.Button();
             this.button_Master = new System.Windows.Forms.Button();
+            this.button_Exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox_Login
@@ -94,11 +95,22 @@
             this.button_Master.UseVisualStyleBackColor = true;
             this.button_Master.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button_Exit
+            // 
+            this.button_Exit.Location = new System.Drawing.Point(268, 354);
+            this.button_Exit.Name = "button_Exit";
+            this.button_Exit.Size = new System.Drawing.Size(100, 33);
+            this.button_Exit.TabIndex = 6;
+            this.button_Exit.Text = "Выйти";
+            this.button_Exit.UseVisualStyleBackColor = true;
+            this.button_Exit.Click += new System.EventHandler(this.button_Exit_Click);
+            // 
             // Auth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(380, 399);
+            this.Controls.Add(this.button_Exit);
             this.Controls.Add(this.button_Master);
             this.Controls.Add(this.button_Main);
             this.Controls.Add(this.brigadirForm);
@@ -120,5 +132,6 @@
         private Button brigadirForm;
         private Button button_Main;
         private Button button_Master;
+        private Button button_Exit;
     }
 }
