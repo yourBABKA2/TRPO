@@ -16,5 +16,40 @@ namespace TRPO
         {
             InitializeComponent();
         }
+
+        private void showRoutes_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Routes routes = new Routes();
+            routes.Show();
+        }
+
+        private void showGarages_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Garages garages = new Garages();
+            garages.Show();
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Auth auth = new Auth();
+            auth.Show();
+        }
+
+        private void driversShow_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            driversView driversView = new driversView();
+            driversView.Show();
+        }
+
+        private void mechanicsShow_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            mechanicsView mechanicsView = new mechanicsView();
+            mechanicsView.Show();
+        }
     }
 }

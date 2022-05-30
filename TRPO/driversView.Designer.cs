@@ -92,7 +92,7 @@
             this.driversChange.Name = "driversChange";
             this.driversChange.Size = new System.Drawing.Size(224, 54);
             this.driversChange.TabIndex = 1;
-            this.driversChange.Text = "Переназначить водитилей";
+            this.driversChange.Text = "Переназначить водителей";
             this.driversChange.UseVisualStyleBackColor = true;
             // 
             // buttonBack
