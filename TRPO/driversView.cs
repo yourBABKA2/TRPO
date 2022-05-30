@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace TRPO
 {
-    public partial class Brigadir : Form
+    public partial class driversView : Form
     {
-        public Brigadir()
+        public driversView()
         {
             InitializeComponent();
-        }
-
-        private void driversPersonel_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            driversView newForm  = new driversView();
-            newForm.Show();
-
         }
     }
 }

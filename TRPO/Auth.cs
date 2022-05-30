@@ -16,5 +16,12 @@ namespace TRPO
         {
             InitializeComponent();
         }
+
+        private void brigadirForm_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Brigadir newForm = new Brigadir();
+            newForm.Show();
+        }
     }
 }

@@ -31,6 +31,7 @@
             this.textBox_Login = new System.Windows.Forms.TextBox();
             this.textBox_Password = new System.Windows.Forms.TextBox();
             this.button_Auth = new System.Windows.Forms.Button();
+            this.brigadirForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox_Login
@@ -58,11 +59,22 @@
             this.button_Auth.Text = "Войти";
             this.button_Auth.UseVisualStyleBackColor = true;
             // 
+            // brigadirForm
+            // 
+            this.brigadirForm.Location = new System.Drawing.Point(12, 12);
+            this.brigadirForm.Name = "brigadirForm";
+            this.brigadirForm.Size = new System.Drawing.Size(75, 23);
+            this.brigadirForm.TabIndex = 3;
+            this.brigadirForm.Text = "бригадир";
+            this.brigadirForm.UseVisualStyleBackColor = true;
+            this.brigadirForm.Click += new System.EventHandler(this.brigadirForm_Click);
+            // 
             // Auth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(380, 399);
+            this.Controls.Add(this.brigadirForm);
             this.Controls.Add(this.button_Auth);
             this.Controls.Add(this.textBox_Password);
             this.Controls.Add(this.textBox_Login);
@@ -78,5 +90,6 @@
         private TextBox textBox_Login;
         private TextBox textBox_Password;
         private Button button_Auth;
+        private Button brigadirForm;
     }
 }
