@@ -36,6 +36,7 @@
             // 
             // textBox_Login
             // 
+            this.textBox_Login.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_Login.Location = new System.Drawing.Point(113, 100);
             this.textBox_Login.Multiline = true;
             this.textBox_Login.Name = "textBox_Login";
@@ -44,6 +45,7 @@
             // 
             // textBox_Password
             // 
+            this.textBox_Password.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox_Password.Location = new System.Drawing.Point(113, 169);
             this.textBox_Password.Multiline = true;
             this.textBox_Password.Name = "textBox_Password";
@@ -58,6 +60,7 @@
             this.button_Auth.TabIndex = 2;
             this.button_Auth.Text = "Войти";
             this.button_Auth.UseVisualStyleBackColor = true;
+            this.button_Auth.Click += new System.EventHandler(this.button_Auth_Click);
             // 
             // brigadirForm
             // 
