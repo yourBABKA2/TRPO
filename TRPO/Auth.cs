@@ -15,6 +15,14 @@ namespace TRPO
     {
         string password, login;
         string BrigPassword = "123", MasterPassword = "1234", MainPassword = "12345";
+
+        private void brigadirForm_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Brigadir brigadir = new Brigadir();
+            brigadir.Show();
+        }
+
         string BrigLogin = "Brig", MasterLogin = "Master", MainLogin = "Main";
         public Auth()
         {

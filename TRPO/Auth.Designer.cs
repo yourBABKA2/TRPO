@@ -60,7 +60,6 @@
             this.button_Auth.TabIndex = 2;
             this.button_Auth.Text = "Войти";
             this.button_Auth.UseVisualStyleBackColor = true;
-            this.button_Auth.Click += new System.EventHandler(this.button_Auth_Click);
             // 
             // brigadirForm
             // 
