@@ -26,6 +26,11 @@ namespace TRPO
             this.Close();
         }
 
+        private void Auth_Load(object sender, EventArgs e)
+        {
+
+        }
+
         public Auth()
         {
             InitializeComponent();

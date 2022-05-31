@@ -23,5 +23,21 @@ namespace TRPO
             Brigadir newForm = new Brigadir();
             newForm.Show();
         }
+
+        private void driversChange_Click(object sender, EventArgs e)
+        {
+            string driverID, BrigID, FIO, Profession, NumberG, Vihecle;
+            driverID = ID.ValueType.ToString();
+            BrigID = Column1.ValueType.ToString();
+            FIO = Column2.ValueType.ToString();
+            Profession = Column3.ValueType.ToString();
+            NumberG = Column4.ValueType.ToString();
+            Vihecle = Column5.ValueType.ToString();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

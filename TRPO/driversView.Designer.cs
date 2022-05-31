@@ -55,6 +55,7 @@
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(647, 227);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ID
             // 
@@ -94,6 +95,7 @@
             this.driversChange.TabIndex = 1;
             this.driversChange.Text = "Переназначить водителей";
             this.driversChange.UseVisualStyleBackColor = true;
+            this.driversChange.Click += new System.EventHandler(this.driversChange_Click);
             // 
             // buttonBack
             // 
