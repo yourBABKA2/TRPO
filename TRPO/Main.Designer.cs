@@ -31,6 +31,10 @@
             this.button_Pass = new System.Windows.Forms.Button();
             this.button_Gruz = new System.Windows.Forms.Button();
             this.button_Back = new System.Windows.Forms.Button();
+            this.mechanicsShow = new System.Windows.Forms.Button();
+            this.driversShow = new System.Windows.Forms.Button();
+            this.showGarages = new System.Windows.Forms.Button();
+            this.showRoutes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_Pass
@@ -64,11 +68,51 @@
             this.button_Back.UseVisualStyleBackColor = true;
             this.button_Back.Click += new System.EventHandler(this.button_Back_Click);
             // 
+            // mechanicsShow
+            // 
+            this.mechanicsShow.Location = new System.Drawing.Point(353, 128);
+            this.mechanicsShow.Name = "mechanicsShow";
+            this.mechanicsShow.Size = new System.Drawing.Size(123, 49);
+            this.mechanicsShow.TabIndex = 7;
+            this.mechanicsShow.Text = "Изменение обс. персонал";
+            this.mechanicsShow.UseVisualStyleBackColor = true;
+            // 
+            // driversShow
+            // 
+            this.driversShow.Location = new System.Drawing.Point(353, 73);
+            this.driversShow.Name = "driversShow";
+            this.driversShow.Size = new System.Drawing.Size(123, 49);
+            this.driversShow.TabIndex = 6;
+            this.driversShow.Text = "Изменение водителей";
+            this.driversShow.UseVisualStyleBackColor = true;
+            // 
+            // showGarages
+            // 
+            this.showGarages.Location = new System.Drawing.Point(29, 128);
+            this.showGarages.Name = "showGarages";
+            this.showGarages.Size = new System.Drawing.Size(123, 49);
+            this.showGarages.TabIndex = 5;
+            this.showGarages.Text = "Изменение цеха";
+            this.showGarages.UseVisualStyleBackColor = true;
+            // 
+            // showRoutes
+            // 
+            this.showRoutes.Location = new System.Drawing.Point(29, 73);
+            this.showRoutes.Name = "showRoutes";
+            this.showRoutes.Size = new System.Drawing.Size(123, 49);
+            this.showRoutes.TabIndex = 4;
+            this.showRoutes.Text = "Изменение маршрута";
+            this.showRoutes.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(508, 246);
+            this.Controls.Add(this.mechanicsShow);
+            this.Controls.Add(this.driversShow);
+            this.Controls.Add(this.showGarages);
+            this.Controls.Add(this.showRoutes);
             this.Controls.Add(this.button_Back);
             this.Controls.Add(this.button_Gruz);
             this.Controls.Add(this.button_Pass);
@@ -84,5 +128,9 @@
         private Button button_Back;
         private Button button_Pass;
         private Button button_Gruz;
+        private Button mechanicsShow;
+        private Button driversShow;
+        private Button showGarages;
+        private Button showRoutes;
     }
 }

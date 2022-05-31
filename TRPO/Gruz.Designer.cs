@@ -143,6 +143,7 @@
             this.button_Add.TabIndex = 4;
             this.button_Add.Text = "Купить";
             this.button_Add.UseVisualStyleBackColor = true;
+            this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
             // 
             // Gruz
             // 
